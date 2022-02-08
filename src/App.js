@@ -51,9 +51,9 @@ function App() {
           value={character}
           onChange={(e) => setCharacter(e.target.value)}>
           <option value=''>- Select character -</option>
-          {items.map((character) => (
-            <option value={character.id} key={character.id}>
-              {character.name}
+          {items.map((item) => (
+            <option value={item.id} key={item.id}>
+              {item.name}
             </option>
           ))}
         </select>
